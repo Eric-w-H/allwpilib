@@ -46,7 +46,7 @@ public final class MathUtil {
     input -= numMax * modulus;
 
     // Wrap input if it's below the minimum input
-    int numMin = (int) ((input - maximumInput) / modulus);
+    int numMin = (int) ((maximumInput - input) / modulus);
     input -= numMin * modulus;
 
     return input;
